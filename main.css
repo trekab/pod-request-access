@@ -28,6 +28,10 @@ header {
   text-align: center;
 }
 
+main {
+  max-width: 665px;
+}
+
 .logo {
   margin: 3.875rem auto;
   height: 3.5rem;
@@ -69,6 +73,35 @@ ul img {
   width: 100%;
 }
 
+form input {
+  width: 100%;
+  height: 46px;
+  border-radius: 1.75rem;
+  border: none;
+  padding: 0.5625rem 2rem;
+  background-color: var(--gray-dark);
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: var(--white);
+  margin: 1rem auto;
+}
+
+form button {
+  width: 100%;
+  height: 46px;
+  border-radius: 1.75rem;
+  border: none;
+  background-color: var(--green);
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: var(--black);
+}
+
+form button:hover {
+  background-color: #b3ffe2;
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   .wrapper {
     margin: auto 2.4375rem;
@@ -80,6 +113,7 @@ ul img {
 
   .logo {
     margin-top: 3.125rem;
+    margin-bottom: 11.9375rem;
   }
 
   h1 {
@@ -98,6 +132,30 @@ ul img {
   ul {
     max-width: 536px;
     margin: 2rem 0;
+    margin-top: 0;
+  }
+
+  .icons-form__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  form {
+    max-width: 427px;
+    margin-top: 2.5rem;
+  }
+
+  form input {
+    height: 56px;
+    max-width: 427px;
+  }
+
+  form button {
+    position: relative;
+    max-width: 10.125rem;
+    top: -66px;
+    left: 260px;
+    height: 46px;
   }
 }
 
