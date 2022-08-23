@@ -18,8 +18,10 @@
 
 body {
   background-image: url("./assets/desktop/image-host.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.wrapper {
+  margin: auto 1.5rem;
 }
 
 header {
@@ -29,6 +31,42 @@ header {
 .logo {
   margin: 3.875rem auto;
   height: 3.5rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 2.375rem;
+  color: var(--green);
+  text-align: center;
+  margin: 1rem auto;
+}
+
+h1 span {
+  color: var(--white);
+}
+
+main p {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: var(--gray-light);
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+}
+ul li {
+  width: 23%;
+}
+
+ul img {
+  width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -43,6 +81,24 @@ header {
   .logo {
     margin-top: 3.125rem;
   }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: start;
+  }
+
+  main p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: start;
+    max-width: 445px;
+  }
+
+  ul {
+    max-width: 536px;
+    margin: 2rem 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -52,5 +108,12 @@ header {
 
   .logo {
     margin-top: 6.375rem;
+  }
+  h1 {
+    font-size: 3.25rem;
+    line-height: 3.875rem;
+  }
+
+  main p {
   }
 }
