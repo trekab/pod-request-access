@@ -17,7 +17,9 @@
 }
 
 body {
-  background-image: url("./assets/desktop/image-host.jpg");
+  background-image: url("./assets/mobile/image-host.jpg");
+  background-size: cover;
+  background-color: var(--black);
 }
 
 .wrapper {
@@ -40,7 +42,7 @@ main {
 h1 {
   text-transform: uppercase;
   font-size: 1.625rem;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 2.375rem;
   color: var(--green);
   text-align: center;
@@ -95,6 +97,7 @@ form button {
   font-size: 0.875rem;
   line-height: 1.75rem;
   color: var(--black);
+  font-weight: bolder;
 }
 
 form button:hover {
@@ -103,6 +106,13 @@ form button:hover {
 }
 
 @media (min-width: 576px) {
+  body {
+    background-image: url("./assets/tablet/image-host.jpg"),
+      url("./assets/desktop/bg-pattern-dots.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top right, bottom -130px left 24px;
+  }
   .wrapper {
     margin: auto 2.4375rem;
   }
@@ -113,13 +123,18 @@ form button:hover {
 
   .logo {
     margin-top: 3.125rem;
-    margin-bottom: 11.9375rem;
+    margin-bottom: 7.9375rem;
   }
 
   h1 {
     font-size: 3rem;
     line-height: 3.5rem;
     text-align: start;
+  }
+
+  main {
+    background-color: var(--black);
+    padding-top: 4rem;
   }
 
   main p {
@@ -160,6 +175,11 @@ form button:hover {
 }
 
 @media (min-width: 1200px) {
+  body {
+    background-image: url("./assets/desktop/bg-pattern-dots.svg"),
+      url("./assets/desktop/image-host.jpg");
+    background-position: bottom 30px right, top 125px right;
+  }
   .wrapper {
     margin: auto 10.3125rem;
   }
