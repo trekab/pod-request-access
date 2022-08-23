@@ -49,12 +49,14 @@
             </li>
           </ul>
 
-          <form>
-            <input type="email" placeholder="Email address" />
-            <button type="submit">Request Access</button>
+          <form id="email-form" novalidate>
+            <input type="email" placeholder="Email address" id="email" />
+            <!-- <span id="error-msg">Oops! Please check your email</span> -->
+            <button type="submit" id="form-submit__btn">Request Access</button>
           </form>
         </div>
       </main>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
