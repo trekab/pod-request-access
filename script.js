@@ -4,6 +4,7 @@ const errorHandle = document.getElementById("error-msg");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const inputField = document.getElementById("email");
+  validateEmail(inputField);
   inputField.value = "";
 });
 
