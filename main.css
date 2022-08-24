@@ -86,6 +86,7 @@ form input {
   line-height: 1.75rem;
   color: var(--white);
   margin: 1rem auto;
+  margin-bottom: 0;
 }
 
 form button {
@@ -103,6 +104,16 @@ form button {
 form button:hover {
   background-color: #b3ffe2;
   cursor: pointer;
+}
+
+#error-msg {
+  display: inline-block;
+  color: #fb3e3e;
+  font-size: 0.75rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  height: 14px;
+  min-width: 175px;
 }
 
 @media (min-width: 576px) {
@@ -168,7 +179,7 @@ form button:hover {
   form button {
     position: relative;
     max-width: 10.125rem;
-    top: -66px;
+    top: -85px;
     left: 260px;
     height: 46px;
   }
